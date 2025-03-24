@@ -1,0 +1,116 @@
+\documentclass[12pt]{article}
+
+% 使用ctex包来支持中文
+\usepackage[UTF8,heading=false,scheme=plain]{ctex}
+\usepackage{graphicx} % 用于包含图像
+\usepackage{amsmath} % 数学内容支持
+\usepackage{geometry}
+\geometry{left=3cm,right=3cm,top=2.5cm,bottom=2.5cm}
+\usepackage{hyperref} % 用于超链接
+\usepackage{parskip} % 用于段落间距，取消首行缩进
+\usepackage{ulem} % 用于下划线
+\usepackage{titlesec} % 用于设置标题格式
+
+% 设置段落格式
+\setlength{\parindent}{0pt} % 取消首行缩进
+\setlength{\parskip}{6pt} % 段落之间的间距
+\setlength{\leftskip}{0pt} % 设置正文左边距为0
+
+% 设置section标题格式，保持标题不变，正文左对齐
+\titleformat{\section}[hang]
+{\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titlespacing{\section}
+{0pt}{3.5ex plus 1ex minus .2ex}{2.3ex plus .2ex}
+
+% 重定义标题格式
+\renewcommand{\maketitle}{
+    \begin{titlepage}
+        \begin{center}
+            \vspace*{0cm}
+            
+            {\huge \kaishu \textbf{电子科技大学格拉斯哥海南学院}}
+            
+            \vspace{0.5cm}
+            {\Large \textbf{UOG-UESTC Joint School of UESTC}}
+            
+            \vspace{4cm}
+            
+            {\Huge \kaishu \textbf{标 准 实 验 报 告}}
+            
+            \vspace{0.5cm}
+            {\Large \textbf{Lab Report}}
+            
+            \vspace{4cm}
+            
+            \begin{center}
+            \begin{tabular}{rc}
+                \kaishu (实验)课程名称: & \kaishu 信号与系统 \\[0.5cm]
+                (LAB) Course Name: & Signals and Systems
+            \end{tabular}
+            \end{center}
+            
+            \vfill
+            
+            {\large \kaishu 电子科技大学教务处制表}
+        \end{center}
+    \end{titlepage}
+    
+    % 第二页的内容
+    \noindent
+    \begin{tabular}{ll@{\hspace{4cm}}ll}
+        \textbf{Student Name:} & 白子鹤 & \textbf{Student No.:} & 202330090206 \\[0.5cm]
+        \textbf{Instructor:} & 郭震宇 & \textbf{Date:} & 2025/3/22 \\[0.5cm]
+        \textbf{Location:} & Public Lab 414
+    \end{tabular}
+    
+    \vspace{1cm}
+}
+
+% 文档开始
+\begin{document}
+
+\maketitle
+
+\section{Lab Name}
+Signals and Systems
+
+\section{Project Name}
+Represent signals using MATLAB
+
+\section{Duration}
+4 hours
+
+\section{Theoretical Background}
+The basic concepts of signals and systems arise in a variety of contexts, from engineering design to financial analysis. In this lab, you will learn how to represent, manipulate, and analyze basic signals and systems in MATLAB. Some basic MATLAB commands for representing signals include: zeros, ones, cos, sin, exp, real, imag, abs, angle, linspace, plot, stem, subplot, xlabel, ylabel, title. Some useful commands in Symbolic Math Toolbox are as: sym, subs, ezplot.
+
+\section{Objectives}
+\begin{itemize}
+    \item Familiarize with some basic MATLAB commands to represent and plot continuous-time and discrete-time signals.
+    \item Use MATLAB to perform operations on signals, including transformations.
+    \item Use MATLAB to analyze signal periodicity.
+    \item Use MATLAB to calculate signal energy and power.
+\end{itemize}
+
+\section{Description}
+The following exercises are from the book, "John R.Buck, Michael M. Daniel, Andrew C. Singer. Computer Exploration in Signals and Systems —— Using MATLAB."
+
+\section{Required Equipment}
+Computer, MATLAB
+
+\section{Procedure, Data Analysis, Results, and Conclusion}
+Add your experimental procedures, data, results analysis, and conclusions here.
+
+\section{Summary and Comments}
+After completing this experiment,
+
+\section{Suggestions for This Experiment}
+None.
+
+\section{Grading}
+\bigskip
+
+\begin{flushright}
+Instructor's Signature:
+\end{flushright}
+
+\end{document}
